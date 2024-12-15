@@ -1,0 +1,84 @@
+/* index.css */
+
+/* Global reset to ensure consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;  /* Light gray background */
+    color: #333;                 /* Dark text color */
+    min-height: 100vh;           /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Center content vertically */
+    padding: 0 20px;             /* Add some padding to prevent content from touching the edges */
+  }
+  
+  /* TailwindCSS setup - ensure it’s included in your project */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  /* Additional custom styles */
+  h1, h2, h3 {
+    color: #2b2b2b;  /* Darker text for headers */
+  }
+  
+  a {
+    color: #3498db;  /* Default link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  input, textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;  /* Form will not grow beyond 400px */
+    margin: 20px 0;
+  }
+  
+  /* Utility classes for layout */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Restrict max width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
