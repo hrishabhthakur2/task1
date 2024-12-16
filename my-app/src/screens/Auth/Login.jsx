@@ -28,7 +28,7 @@ const Login = () => {
         // Update user state using AuthContext's login method
         login(email, password); // Optional: you can pass email and password, or just the response
         // Redirect user after successful login
-        navigate("/dashboard"); // Or any other page
+        navigate("/dashboard"); // Redirect directly to the dashboard
       }
     } catch (error) {
       console.error("Login failed:", error.response?.data?.message || error.message);
